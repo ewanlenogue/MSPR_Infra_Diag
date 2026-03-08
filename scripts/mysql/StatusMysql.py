@@ -9,12 +9,7 @@ user_bdd="check_if_well"
 pwd_bdd="t#in9isg@@d"
 bdd="WMS_BASE"
 
-
-for ip in liste_servers:
-    print("\n=======================================================")
-    print(f"Connexion au serveur de base de données: {ip}")
-    print("=======================================================")
-
+def check_mysql_connection(ip, port, user_bdd, pwd_bdd, bdd):
     #conn = None
     #cursor = None
 
@@ -45,8 +40,16 @@ for ip in liste_servers:
                 print(row)
 
     except Error as e:
-        print(f"Erreur : {e}")
+        return f"Erreur : {e}"
 
     # Fermeture du curseur et de la connexion
     finally:
-        print("Connexion à MySQL fermée.")
+        return "Connexion à MySQL fermée."
+        
+if __name__ == "__main__":
+    for ip in liste_servers:
+        print("\n=======================================================")
+        print(f"Connexion au serveur de base de données: {ip}")
+        print("=======================================================")
+        
+        print(check_mysql_connection(ip, port, user_bdd, pwd_bdd, bdd))
