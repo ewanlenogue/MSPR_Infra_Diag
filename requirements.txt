@@ -1,0 +1,7 @@
+pytest
+pytest-mock
+dnspython
+ldap3
+mysql-connector-python
+python-dotenv
+rich
