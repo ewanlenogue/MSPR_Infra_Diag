@@ -6,17 +6,22 @@ Rendu pour le cours de INTÉGRATION CONTINUE
 - MySQL
 - Informations système Linux
 
+## Pre-requis
+
+Python 3.11 ou 3.12
+
 ## Installation
 
 git clone https://github.com/user/MSPR_Infra_Diag.git
-
 cd MSPR_Infra_Diag
 
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 
 ## Lancer les tests
 
-pytest
+pytest -v
 
 ## CI/CD
 
