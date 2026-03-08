@@ -1,4 +1,4 @@
-from ..scripts.ad_dns.Diag_AD_DNS import check_dns
+from scripts.ad_dns.Diag_AD_DNS import check_dns
 
 
 def test_dns_success(mocker):

@@ -1,4 +1,4 @@
-from ..scripts.ad_dns.Diag_AD_DNS import check_ad_ldap
+from scripts.ad_dns.Diag_AD_DNS import check_ad_ldap
 
 
 def test_ad_connection(mocker):

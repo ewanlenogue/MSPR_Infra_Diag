@@ -1,4 +1,4 @@
-from ..scripts.mysql.StatusMysql import check_mysql_connection
+from scripts.mysql.StatusMysql import check_mysql_connection
 
 
 def test_mysql_connection(mocker):
